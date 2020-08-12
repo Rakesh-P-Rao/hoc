@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import React, { Component, Fragment } from 'react';
+// import WithFullstack from './Components/Jspiders';
+// import PureComp from './Components/PureComp';
+// import RegularComponent from './Components/RegularComponent';
+// import Jspiders from './Components/Jspiders';
 
-function App() {
+// class App extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {  }
+//   }
+//   render() { 
+//     return (
+//       <Fragment>
+//         <PureComp />
+//         <RegularComponent />
+//         <Jspiders />
+//       </Fragment>
+//     );
+//   }
+// }
+ 
+// export default WithFullstack(App);
+
+
+
+
+
+//// hooks
+import React from 'react'
+import CounterWithClass from './Components/Hooks/ClassBasedComp'
+import HookBasedComp from './Components/Hooks/HookBasedComp'
+import LoginForm from './Components/Hooks/LoginForm'
+import GithubUser from './Components/Hooks/GithubUser'
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <CounterWithClass /> */}
+      {/* <HookBasedComp/> */}
+      {/* <LoginForm/> */}
+      <GithubUser/>
     </div>
-  );
+  )
 }
-
-export default App;
